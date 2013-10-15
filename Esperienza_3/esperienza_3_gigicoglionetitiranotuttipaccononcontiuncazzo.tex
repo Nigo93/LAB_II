@@ -1,0 +1,43 @@
+\documentclass[11pt]{article}
+%Gummi|061|=)
+\usepackage[table]{xcolor} 
+\usepackage{vmargin}
+\usepackage[T1]{fontenc} %encoding del font
+\usepackage[utf8]{inputenc} %encoding dell'input
+\usepackage[italian]{babel} %lingua per la formattazione
+\usepackage{mparhack}
+\usepackage{pgfplotstable}
+\usepackage{float}
+%pacchetti per la formattazione
+\usepackage{calc} %fantasmi
+
+\usepackage{graphicx} %inserire immagini (grafici vettoriali.pdf)
+%pacchetti -->\SCfigure \SCtable
+\usepackage{booktabs} %pacchetto per per le tabelle
+\usepackage{amsmath, amssymb} %pacchetti per usare comandi matematici
+\usepackage{pgf,tikz}
+\usepackage{caption}
+\usepackage{siunitx}
+\usepackage{setspace}
+\usepackage{subfig}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{pgfplots}
+
+\begin{document}
+
+\title{\textbf{Esperienza 3}}
+\author{Alberini Giacomo\\ Bassini Luigi\\Pedrotti Michele\\ Trevisson Nicola}
+\date{\today}
+\setmarginsrb{30mm}{10mm}{25mm}{10mm}%
+             {0mm}{10mm}{0mm}{10mm}
+\maketitle
+
+\section{Montaggio dell'impianto a vuoto}
+La prima parte dell'esperienza consisteva nel collegare tra loro un serbatoio di volume, una pompa turbo-molecolare, una pompa rotativa, due vacuometri Pirani, un vacuometro a ionizzazione a catodo caldo e un vacuometro a ionizzazione a catodo freddo. La difficoltà principale consisteva nel trattare la pompa turbo molecolare nella maniera corretta. Questo tipo di pompa, infatti, può essere accesa solamente quando nella camera è stata raggiunta una pressione di al massimo $10^{-2}$ \unit{mbar}. Se la pompa venisse accesa quando la pressione nella camera fosse maggiore, il motore brucerebbe nel tentativo di raggiungere la frequenza di regime. Inoltre, una volta accesa la pompa, la frequenza di rotazione delle pale raggiunge un valore di $9\cdot10^{4}$ giri al minuto. Ne segue che una volta raggiunto il pieno regime, sono necessari diversi minuti prima che, spenta la pompa, le pale cessino di ruotare. 
+\par Una prima soluzione è stata quella di collegare in serie pompa rotativa, pompa turborotazionale e camera. In questo modo la pompa rotazionale avrebbe portato all'interno della camera un vuoto tale da poter accendere la pompa turbo rotazionale, che avrebbe quindi permesso di raggiungere una situazione di Highvacuum. Questa soluzione, però, non ci avrebbe permesso di riportare la camera alla pressione atmosferica senza dover spegnere la pompa turborotazionelae (e di conseguenza aspettare il tempo necessario all'arresto delle pale).
+\par Abbiamo quindi deciso di inserire un raccordo a T in uscita dalla pompa rotazionale, in modo tale da collegare (oltre al sistema in serie) direttamente pompa rotazionale e camera. Questo sistema (oltre all'ausilio delle necessarie valvole) ci permette di riportare la pressione atmosferica nella camera senza dover nè spegnere nè bruciare la pompa turborotazionale. Riportiamo in figura lo schema da noi adottato. 
+
+% INSERIRE SCHEMA
+
+\par Nello schema riportato compaiono quattro vacuometri: due vacuometri Pirani, un vacuometro a catodo caldo e un vacuometro a catodo freddo. I vacuometri hanno l'ovvia funzione di misurare la pressione in diversi punti dell'impianto e con diverse scale di precisione. In particolare i vacuometri Pirani hanno un range di funzionamento compreso tra pressione atmosferica e $10^{-4}$ mbar. Come rappresentato nello schema abbiamo inserito i due Pirani prima e dopo la pompa turbomolecolare. In questo modo siamo riusciti a monitorare la pressione in entrata e in uscita, controllandone il corretto funzionamento. Inoltre il Pirani monitorante la pressione all'interno della camera ci ha permesso di capire quando poter accendere gli altri due vacuometri (a catodo freddo, e a catodo caldo). Questi, infatti, hanno un range di funzionamento compreso tra $10^{-2}$ \unit{mbar} e $10^{-4}$ \unit{mbar} (catodo freddo), $10^{-3}$ \unit{mbar} e $10^{-10}$ \unit{mbar} (catodo caldo), e se portati fuori scala nel limite superiore possono subire danni anche gravi. Grazie all'utilizzo sequenziale dei diversi vacuometri siamo riusciti a monitorare l'andamento della pr
