@@ -1,11 +1,14 @@
-LAB II
+Relazioni di Laboratorio di Fisica II
 ===
-Relazioni di laboratorio di Fisica II
-By:
+Le relazioni presenti su questa repository sono state fatte da:
 Giacomo Alberini
+
 Luigi Bassini
+
 Michele Pedrotti
+
 Nicola Trevisson
+
 
 Università degli studi di Trento
 2013
