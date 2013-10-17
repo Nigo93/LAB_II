@@ -2,13 +2,13 @@ Relazioni di Laboratorio di Fisica II
 ===
 Le relazioni presenti su questa repository sono state fatte da:
 
-Giacomo Alberini
+¦ Giacomo Alberini
 
-Luigi Bassini
+¦ Luigi Bassini
 
-Michele Pedrotti
+¦ Michele Pedrotti
 
-Nicola Trevisson
+¦ Nicola Trevisson
 
 
 Università degli studi di Trento
