@@ -1,4 +1,3 @@
-% Un articolo scritto con LaTeX
 \documentclass[a4paper,11pt]{article}
 \usepackage{graphicx}
 \usepackage[T1]{fontenc} % codifica dei font in uscita
@@ -55,15 +54,26 @@ Il valore limite delle due pompe, apprezzabile anche dai grafici, vale 7000 Pa $
 Si nota anche che la pompa meccanica (azionata da un motore elettrico) raggiunge un valore di pressione finale minore rispetto a quella manuale.
 L'andamento, in entrambi i grafici, sembra essere del tipo: $P=P\ped{0}+ae^{bx}$, dove P è la pressione, $P\ped{0}$ la pressione limite valutata sperimentalmente, a e b i parametri della curva (è da notare che il parametro b dovrà evidentemente avere un valore negativo), e x una variabile indicante il numero di pompate nel primo caso e il tempo nel secondo.
 
+I risultati dei due fit sono sintetizzati nella seguente tabella.\\
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline $Tipo$ $di$ $pompa$ & $Pressione$ $limite$ & $a$ $\pm$ $\delta a$ & $b$ $\pm$ $\delta b$ \\ 
+\hline Pompa Manuale & 7000 $Pa \pm 300 Pa$ & 0.89$\pm 0.04$  &-0.0056 $\pm0.0003$  \\ 
+\hline Pompa Meccanica & 1300$Pa \pm 300Pa$ & 0.84$\pm$0.04 & -0.152$\pm$0.007 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
 
 \subsection{Calcolo della densità dell'aria}
-Per definizione, la densità è rappresentata dal rapporto tra massa e volume. Avendo già calcolato precedentemente il volume della bottiglia in cui è contenuto il gas, abbiamo proceduto valutando la massa del gas. Questo valore si può ottenere per differenza tra il peso della bottiglia vuota (1564.8g $\pm 0.05$g), e il peso della bottiglia in cui è presente gas d'aria alla pressione di 3 Atm (1574.4g $\pm 0.05$g). Il valore ottenuto è: 9.6g $\pm 0.05$ g.
+Per definizione, la densità è rappresentata dal rapporto tra massa e volume. Avendo già calcolato precedentemente il volume della bottiglia in cui è contenuto il gas, abbiamo proceduto valutando la massa del gas. Questo valore si può ottenere per differenza tra il peso della bottiglia vuota (1564.8g $\pm 0.05$g), e il peso della bottiglia in cui è presente gas d'aria alla pressione di 3 Atm (1574.4g $\pm 0.05$g).\newpage
+ Il valore ottenuto è: 9.6g $\pm 0.05$ g.
 Ne segue che la densità dell'aria a $3 ~atm$ è  $d= m/V= 3.46 kg/m^3 \pm 0.02kg/m^3$  
 
 \section{Calcolo del peso molare di alcuni gas}
 Successivamente si sono calcolati i valori di massa molare di alcuni gas, utilzzando la legge di stato dei gas perfetti.
 Dopo aver calcolato la massa della bottiglia in cui era stato fatto il vuoto utilizzando la pompa meccanica, per differenza sono state calcolate le masse dei diversi gas.
-\newpage Conoscendo la massa del gas, per conoscere la massa molare dobbiamo conoscerne il numero di moli contenute nel volume della battiglia. Utilizzando la relazione $PV=nRT$ , otteniamo $n=PV/RT$, dove P è la pressione all'interno della bottiglia misurata attraverso il manometro differenziale e con valore 299000 Pa $\pm500$ Pa, V il volume della bottiglia, R la costante universale dei gas e T la temperatura ambientale al momento dell'esperimento).E' da notare che, poichè il manometro utilizzato per misurare la pressione all'interno della bottiglia è un manometro di tipo differenziale, è stato necessario misurare la pressione atmosferica al momento dell'esperimento. Questo valore, rimasto costante durante il pomeriggio, era di 97300 Pa $\pm70$ Pa, ed è stato misurato attraverso un manometro a tubi di vetro. Successivamente, dalla relazione M$\ped{mol}$=$m/n$ otteniamo quindi la massa molare del gas. I risultati ottenuti sono quindi stati riportati nella seguente tabella: 
+Conoscendo la massa del gas, per conoscere la massa molare dobbiamo conoscerne il numero di moli contenute nel volume della battiglia. Utilizzando la relazione $PV=nRT$ , otteniamo $n=PV/RT$, dove P è la pressione all'interno della bottiglia misurata attraverso il manometro differenziale e con valore 299000 Pa $\pm500$ Pa, V il volume della bottiglia, R la costante universale dei gas e T la temperatura ambientale al momento dell'esperimento).E' da notare che, poichè il manometro utilizzato per misurare la pressione all'interno della bottiglia è un manometro di tipo differenziale, è stato necessario misurare la pressione atmosferica al momento dell'esperimento. Questo valore, rimasto costante durante il pomeriggio, era di 97300 Pa $\pm70$ Pa, ed è stato misurato attraverso un manometro a tubi di vetro. Successivamente, dalla relazione M$\ped{mol}$=$m/n$ otteniamo quindi la massa molare del gas. I risultati ottenuti sono quindi stati riportati nella seguente tabella: 
 \hspace{-140pt}
 
 \begin{center}
