@@ -23,38 +23,61 @@
 \usepackage{array}
 \usepackage{multirow}
 
+%\title{\textbf{Equazione di stato dei Gas}\\ %Autori}\author{ xxxxxxxxxxxxx\and
+	%	xxxxxxxxxxxxx\and
+	%	xxxxxxxxxxxxx}
+%\date{\today}
+%\setmarginsrb{30mm}{10mm}{20mm}{10mm}
+             %{0mm}{10mm}{0mm}{10mm}
 
+%\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
              
 \begin{document}
 
 \begin{center}
 
+% Upper part of the page. The '~' is needed because \\
+% only works if a paragraph has started.
+% \includegraphics[width=0.20\textwidth]{./Logo1}~\\[1cm]
+
+%\textsc{\LARGE University of Trento}\\[1.5cm]
+
 \textsc{\Huge Esperienza IV}\\[0.5cm]
+%\vspace{30pt}
+
+%\HRule \\[0.4cm]
+%\vspace{15pt}
+%{ \huge \bfseries Svuotamento di un volume}\\[0.4cm]
+%\vspace{15pt}
+%\HRule \\[1.5cm]
+%\vspace{30pt}
+% Author and supervisor
 
 
 \large
 \title{ESPERIENZA IV}
- 
+
+%\emph{\large\textbf{Autori}}\\ \\ 
 Michele \textsc{Pedrotti}\\
 Luigi \textsc{Bassini}\\
 Nicola \textsc{Trevisson}\\
 Giacomo \textsc{Alberini}
 
+
+
+
+
+
 \end{center}
 
+%\tableofcontents
 
 \rowcolors{1}{gray!25}{white}
 ~\\
-
+%\textbf{Introduzione}\\\\
 \section{Scopo dell'esperienza}
-Lo scopo di questa esperienza, è quello di tarare una valvola a spillo. Una valvola a spillo ( o \textit{Fine control needle valve}), è un particolare tipo di valvola che permette di conoscere il flusso di gas in entrata, e risulta estremamente importante in determinati contesti. Il nostro obiettivo sarà proprio quello di misurare il flusso in entrata in una camera di volume (misurato come variazione di pressione in funzione del tempo), al variare del numero di giri di apertura della valvola.
-\section{Materiale a disposizione}
-\begin{itemize}
-\item Impianto da vuoto;
-\item Valvola a spillo con regolazione micrometrica;
-\item Multimetro e sistema di aquisizione dati;
-\item Vacuometro Pirani per la misura della pressione in camera;
-\end{itemize}
+Lo scopo di questa esperienza è quello di tarare una valvola a spillo. Una valvola a spillo ( o \textit{Fine control needle valve}), è un particolare tipo di valvola che permette di conoscere il flusso di gas in entrata, e risulta estremamente importante in determinati contesti. Il nostro obiettivo sarà proprio quello di misurare il flusso in entrata in una camera di volume (misurato come variazione di pressione in funzione del tempo), al variare del numero di giri di apertura della valvola.
+
 
 \section{Taratura della valvola a spillo}
 \subsection{Impianto da vuoto}
@@ -64,14 +87,53 @@ Per misurare il flusso di gas in entrata nella camera, e quindi tarare la valvol
 \begin{figure}[H]
 \hspace{-30.5pt}
 \includegraphics[scale=0.4]{schema_finale.png}
-\caption{}
-\label{}
+
+
 \end{figure}
 \end{center}
 
 Per prima cosa abbiamo misurato il flusso di gas dovuto alle perdite dell'impianto. Questo flusso dovrà successeivamente essere sottratto alle misure di flusso relative alla valvola a spillo. Per questa prima misura abbiamo raggiunto il vuoto limite del nostro impianto (circa $1.2\cdot10^{-5}$ mbar), e abbiamo quindi misurato la pressione in funzione del tempo utilizzando il software in nostra dotazione.
-Successivamente abbiamo creato nuovamente il vuoto limite nella camera (utilizzando le precauzioni dovuto in modo da non danneggiare la pompa turbomolecolare). Durante questo processo abbiamo tenuto completamente aperti i due rubinetti della valvola a spillo (tappando ovviamente l'uscita così da non provocare un repentino riflusso di gas all'interno della camera), così da evitare che si creasse un volume morto nella valvola che avrebbe poi pesantemente inciso sui primi dati acquisiti. Raggiunto il vuoto limite abbiamo sigillato la camera (tenendo accesa la pompa turbomolecolare),calibrata la valvola a spillo sulla prima tacca e quindi tolto il tappo all'uscita della valvola. Con il software abbiamo quindi acquisito i dati Pressione-Tempo. 
-A questo proposito è rilevante notare che le misure acquisite in entrata dal software sono relative al voltaggio rilevato dal Pirani. Questo comporta due importanti situazioni. Prima di tutto il range del Pirani va da $10^{-3}$ mbar a 10 mbar, quindi le misure di pressioni inferiori o superiori a questi valori non possono essere considerate attendibili. Inoltre il Pirani lavora attraverso diverse conversioni, e per questo l'incertezza sulle misure di pressione è molto elevata, dell'ordine del 5\%\ in termini di errore relativo. 
-Una volta acquisiti i dati è necessario ripetere l'intera sequenza aprendo questa volta la volvola di due tacche. L'operazione è stata ripetuta otto volte, fino ad aprire la valvola all'ottava tacca.  
+Successivamente abbiamo creato nuovamente il vuoto limite nella camera (utilizzando le precauzioni dovute in modo da non danneggiare la pompa turbomolecolare). Durante questo processo abbiamo tenuto completamente aperti i due rubinetti della valvola a spillo (tappando ovviamente l'uscita così da non provocare un repentino riflusso di gas all'interno della camera), così da evitare che si creasse un volume morto nella valvola che avrebbe poi pesantemente inciso sui primi dati acquisiti. Raggiunto il vuoto limite abbiamo sigillato la camera (tenendo accesa la pompa turbomolecolare),calibrato la valvola a spillo sulla prima tacca e quindi tolto il tappo all'uscita della valvola. Con il software abbiamo quindi acquisito i dati Pressione-Tempo. 
+A questo proposito è rilevante notare che le misure acquisite in entrata dal software sono relative al voltaggio attraverasante il Pirani. Questo comporta due importanti situazioni. Prima di tutto il range del Pirani va da $10^{-3}$ mbar a 10 mbar, quindi le misure di pressioni inferiori o superiori a questi valori non possono essere considerate attendibili. Inoltre il Pirani lavora attraverso diverse conversioni, e per questo l'incertezza sulle misure di pressione è molto elevata, dell'ordine del 5\%\ in termini di errore relativo. 
+Una volta acquisiti i dati è necessario ripetere l'intera sequenza aprendo  la volvola alla seconda tacca. L'operazione è stata ripetuta otto volte, fino ad aprire la valvola all'ottava tacca.  
+Una volta acquisiti i dati sperimentali, abbiamo graficato l'andamento della pressione in funzione del tempo. Si può notare che questo andamento è di tipo lineare. Riportiamo nel grafico seguente la rappresentazione del quarto set di dati:
+ \begin{center} 
+\begin{figure}[H]
+\hspace{-90.5pt}
+\includegraphics{graficoP4.png}
+
+
+\end{figure}
+\end{center}
+
+
+Questo andamento è analogo a tutti gli altri set di dati, cioè del tipo: $Y=a+bX$, dove Y è la pressione e X il tempo. Tramite regressione lineare abbiamo quindi calcolato i parametri a e b, e verificato la bontà del fit tramite test del chi quadro. Riportiamo nella seguente tabella i risultati ottenuti:\\
+\vspace{10 px}\\
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline $Tacche$ & $a\pm$$\delta a$ [Pa] & $b\pm$$\delta b$ [$s^{-1}$] & $\chi^{2}\ped{sperimentale}$ & $\chi^{2}\ped{teorico}$ & $Q\pm\delta Q$ [$pa\cdot m^{3}$$\cdot s{-1}$] \\ 
+\hline 1 & 1.84$\cdot10^{-2}$$\pm 5\cdot10^{-4}$ &  3.67$\cdot10^{-4}$$\pm 6\cdot10^{-7}$ & 2896 & 2801 &  \\ 
+\hline 2 & 3$\cdot10^{-4}$$\pm 1\cdot10^{-4}$ & 2.904$\cdot10^{-3}$$\pm 8\cdot10^{-6}$ & 238 & 683 &  \\ 
+\hline 3 & -2.4$\cdot10^{-2}$$\pm 1\cdot10^{-3}$ &  2.80$\cdot10^{-3}$$\pm 1\cdot10^{-5}$ & 192 & 456 &  \\ 
+\hline 4 & -2.8$\cdot10^{-2}$$\pm 2\cdot10^{-3}$ &  5.41$\cdot10^{-3}$$\pm 3\cdot10^{-5}$ & 81 & 214 &  \\ 
+\hline 5 & -1.91$\cdot10^{-1}$$\pm 4\cdot10^{-3}$ & 3.51$\cdot10^{-2}$$\pm 1\cdot10^{-4}$ & 95 & 202 &  \\ 
+\hline 6 & -1.98$\pm 3\cdot10^{-2}$  & 5.36$\cdot10^{-1}$$\pm 2\cdot10^{-3}$ & 104 & 177 &  \\ 
+\hline 7 & -33.1$\pm 1.2\cdot10^{-1}$ & 8.32$\pm 3\cdot10^{-2}$ & 103 & 194 &  \\ 
+\hline 8 & -1.107$\cdot10^{3}$$\pm 3$ & 50.5$\pm 1\cdot10^{-1}$  & 915 & 325 &  \\ 
+\hline 
+\end{tabular} \\
+\\
+\\
+Nella tabella compare anche il parametro Q. Q è il flusso di aria entrante nella camera di volume ed è misurato come:
+$Q=V\cdot \frac{dP}{dt}-Q0$, dove V è 5930$\pm 30$ $cm^{3}$, e $\frac{dP}{dt}$ è il parametro b precedentemente stimato,e Q0 il flusso dovuto alle perdite dell'impianto da vuoto.  Notiamo che il primo valore di flusso ha valore negativo. Questo si può spiegare col fatto che il flusso dovuto all'apertura di una tacca della valvola a spillo ha valore infinitesimo, e che il flusso dovuto alle perdite dell'impianto non è costante nel tempo. E' quindi plausibile che il flusso di fondo sia aumentato assumendo un valore maggiore di Q0.
+
+Inseriamo di seguito il grafico relativo al flusso Q in funzione del numero di giri della valvola a spillo:\\ 
+ \begin{center} 
+\begin{figure}[H]
+\hspace{-90.5pt}
+\includegraphics{graficoQ.png}
+
+
+\end{figure}
+\end{center}
 
 \end{document} 
