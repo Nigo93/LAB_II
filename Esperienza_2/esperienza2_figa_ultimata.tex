@@ -66,7 +66,7 @@ Giacomo \textsc{Alberini}
 \end{center}
 
 \setmarginsrb{30mm}{10mm}{25mm}{10mm}%
-             {0mm}{10mm}{0mm}{10mm}
+             {0mm}{0mm}{0mm}{10mm}
 
 
 \section{Introduzione}
@@ -79,9 +79,9 @@ Una volta verificata la validità della legge si è determinato un valore medio 
 
 
 \section{Pressione di vapore dell'acqua}
-
+%Durante lo svolgimento dell'esperienza è stata monitorata la pressione ambientale e la temperatura del laboratorio che si sono mantenute costanti durante tutta la sessione pomeridiana (corrispondenti a: $\sim 970 mbar$ e $\sim 21.9^\circ C$)
 Per le misurazioni di pressione di vapore dell'acqua all'equilibrio abbiamo seguito un particolare procedimento con lo scopo di diminuire, l'errore sistematico dovuto alla non termalizzazione del tubo in plastica che collega il manometro differenziale alla bottiglia.\\
-È inoltre importante considerare anche la pressione  (corrispondente a $\sim 970 mbar$) e la temperatura (corrispondente a $\sim 22^\circ C$) del laboratorio nel momento in cui si è svolta l'esperienza poiché differenti pressioni e temperature possono influenzare i risultati ottenuti aumentando la propagazione di eventuali errori sistematici.\\
+È inoltre importante considerare anche la pressione  (corrispondente a $\sim 970 mbar$) e la temperatura (corrispondente a $\sim 22^\circ C$) del laboratorio nel momento in cui si è svolta l'esperienza poiché differenti pressioni e temperature possono influenzare il funzionamento di alcuni strumenti come il manometro differenziale Burdon gli eventuali errori sistematici.\\
 Il primo passo consiste nel portare il sistema (una bottiglia da 100 ml riempita per 3/4 di acqua demineralizzata all'interno di un becker più grande contenente acqua e ghiaccio) ad una temperatura di $11^\circ C$. Una volta raggiunto l'equilibrio termico si è proceduto allo svuotamento del volume d'aria dalla bottiglia per poi immergere il condotto che la collega al barometro nell'acqua in essa contenuta. In questa maniera, ripristinando la pressione atmosferica  all'interno della bottiglia, il tubo e il barometro si sono riempiti di acqua. Così facendo è possibile ottenere una misura diretta della pressione di vapore dell'acqua contenuta all'interno della bottiglia non influenzata dalle diverse condizioni termodinamiche dell'aria contenuta nel condotto.
  
 
@@ -91,8 +91,6 @@ Di seguito riportiamo il grafico ottenuto dai dati rilevati sperimentalmente.
 \begin{figure}[H]
 \hspace{-38mm}
 \includegraphics[scale=1.10]{pressione_temperatura.png}
-\caption{}
-\label{}
 \end{figure}
 
 Nel grafico abbiamo riportato anche le barre d'errore relative alle misure effettuate, che aumentano sensibilmente al diminuire dalla pressione. Ciò è giustificato dal fatto che: $\delta$ln(P) $\propto$ $P^{-1}$. Notiamo inoltre che, come ipotizzato precedentemente, i dati rappresentano un andamento lineare.\\
@@ -106,11 +104,11 @@ a & $\delta$a & b [\unit{K}] & $\delta$b [\unit{K}]\\
 \hline
 \end{tabular}
 \end{center}
-Dove a e b rappresentano rispettivamente l'intercetta e il coefficiente angolare della retta. Per verificare la validità di tale legge abbiamo effettuato il test del chi quadro:2
+Dove a e b rappresentano rispettivamente l'intercetta e il coefficiente angolare della retta. Per verificare la validità di tale legge abbiamo effettuato il test del chi quadro:
 \begin{equation}
 X^2 = 1 \pm 4
 \end{equation}
-Il risultato ottenuto è decisamente minore rispetto al valore atteso del chi quadro, che era di circa 11. Teoricamente un valore così inferiore al chi quadro atteso è indice di una sovrastima delle incertezze sulla pressione. Questa sovrastima è dovuta al fatto che sebbene la risoluzione del manometro differenziale Bourdon in  nostra dotazione fosse moltao bassa (50 \unit{mbar}) l'effettivo errore a cui sono soggetti i valori di pressione è determinato dalla larghezza della tacca relativa alla misura e non alla distanza tra esse.
+Il risultato ottenuto è decisamente minore rispetto al valore atteso del chi quadro, che era di circa 11. Teoricamente un valore così inferiore al chi quadro atteso è indice di una sovrastima delle incertezze sulla pressione. Questa sovrastima è dovuta al fatto che sebbene la risoluzione del manometro differenziale Bourdon in  nostra dotazione fosse molto bassa (50 \unit{mbar}) l'effettivo errore a cui sono soggetti i valori di pressione in realtà è determinato non tanto dalla risoluzione di misura del manometro ma dalla larghezza della tacca  sulla quale veniva effettuata la misura nel momento in cui la lancetta del manometro vi passava sopra. %è determinato dalla larghezza della tacca relativa alla misura e non alla distanza tra esse.
 
 \section{Entalpia di vaporizzazione dell'acqua}
 Il comportamento di un gas in cui vi sia equilibrio tra due fasi della stessa specie chimica è descritto dalla legge di Clausius-Clapeyron, in cui compare come componente il valore dell'entalpia di vaporizzazione/solidificazione. 
@@ -119,7 +117,7 @@ Tale valore può essere ricavato utilizzando i parametri trovati con il fit del 
 $$\ln{p}= -\frac{\lambda}{R}\cdot\frac{1}{T}$$
 $$\lambda =-m \cdot R$$
 con $m$ coefficiente angolare della retta plottata e R costante universale dei gas. \\
-Il valore da noi è ottenuto è:
+Il valore da noi ottenuto è:
 $$\lambda = 45.4 \pm 1.5 ~\text{kJ}/\text{mol}$$   
 \\che è compatibile con i risultati presenti in letteratura. 
 
