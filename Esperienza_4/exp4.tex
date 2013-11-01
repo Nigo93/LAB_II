@@ -1,63 +1,27 @@
-\documentclass[11pt]{article}
-%Gummi|061|=)
-\usepackage[table]{xcolor} 
-\usepackage{vmargin}
-\usepackage[T1]{fontenc} %encoding del font
-\usepackage[utf8]{inputenc} %encoding dell'input
-\usepackage[italian]{babel} %lingua per la formattazione
-\usepackage{mparhack}
-\usepackage{pgfplotstable}
-\usepackage{float}
-%pacchetti per la formattazione
-\usepackage{calc} %fantasmi
+% Un articolo scritto con LaTeX
+\documentclass[a4paper,11pt]{article}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc} % codifica dei font in uscita
+\usepackage[utf8]{inputenc} % lettere accentate da tastiera
+\usepackage[italian]{babel} % lingua principale del documento
+\usepackage{url}
+\usepackage [a4paper, top=2.5cm, bottom=2.5cm, left=1.5cm, right=1.5cm, bindingoffset=8mm] {geometry}
 
-\usepackage{graphicx} %inserire immagini (grafici vettoriali.pdf)
-%pacchetti -->\SCfigure \SCtable
-\usepackage{booktabs} %pacchetto per per le tabelle
-\usepackage{amsmath, amssymb} %pacchetti per usare comandi matematici
-\usepackage{pgf,tikz}
-\usepackage{caption}
-\usepackage{siunitx}
-\usepackage{setspace}
-\usepackage{subfig}
-\usepackage{array}
-\usepackage{multirow}
-
-%\title{\textbf{Equazione di stato dei Gas}\\ %Autori}\author{ xxxxxxxxxxxxx\and
-	%	xxxxxxxxxxxxx\and
-	%	xxxxxxxxxxxxx}
-%\date{\today}
-%\setmarginsrb{30mm}{10mm}{20mm}{10mm}
-             %{0mm}{10mm}{0mm}{10mm}
-
-%\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+% inizio documento
              
 \begin{document}
 
 \begin{center}
 
-% Upper part of the page. The '~' is needed because \\
-% only works if a paragraph has started.
-% \includegraphics[width=0.20\textwidth]{./Logo1}~\\[1cm]
 
-%\textsc{\LARGE University of Trento}\\[1.5cm]
 
 \textsc{\Huge Esperienza IV}\\[0.5cm]
-%\vspace{30pt}
 
-%\HRule \\[0.4cm]
-%\vspace{15pt}
-%{ \huge \bfseries Svuotamento di un volume}\\[0.4cm]
-%\vspace{15pt}
-%\HRule \\[1.5cm]
-%\vspace{30pt}
-% Author and supervisor
 
 
 \large
 \title{ESPERIENZA IV}
 
-%\emph{\large\textbf{Autori}}\\ \\ 
 Michele \textsc{Pedrotti}\\
 Luigi \textsc{Bassini}\\
 Nicola \textsc{Trevisson}\\
@@ -72,7 +36,6 @@ Giacomo \textsc{Alberini}
 
 %\tableofcontents
 
-\rowcolors{1}{gray!25}{white}
 ~\\
 %\textbf{Introduzione}\\\\
 \section{Scopo dell'esperienza}
@@ -84,8 +47,8 @@ Lo scopo di questa esperienza è quello di tarare una valvola a spillo. Una valv
 Per misurare il flusso di gas in entrata nella camera, e quindi tarare la valvola a spillo, è necessario creare il vuoto nella camera. Per raggiungere questo scopo si è utilizzato l'impianto da vuoto già descritto nella relazione precedente. Ne riportiamo di seguito uno schema:
 \vspace{-10 pt} 
  \begin{center} 
-\begin{figure}[H]
-\hspace{-30.5pt}
+\begin{figure}[htpd]
+\hspace{20 pt}
 \includegraphics[scale=0.4]{schema_finale.png}
 
 
@@ -98,8 +61,8 @@ A questo proposito è rilevante notare che le misure acquisite in entrata dal so
 Una volta acquisiti i dati è necessario ripetere l'intera sequenza aprendo  la volvola alla seconda tacca. L'operazione è stata ripetuta otto volte, fino ad aprire la valvola all'ottava tacca.  
 Una volta acquisiti i dati sperimentali, abbiamo graficato l'andamento della pressione in funzione del tempo. Si può notare che questo andamento è di tipo lineare. Riportiamo nel grafico seguente la rappresentazione del quarto set di dati:
  \begin{center} 
-\begin{figure}[H]
-\hspace{-90.5pt}
+\begin{figure}[htpd]
+\hspace{-50 pt}
 \includegraphics{graficoP4.png}
 
 
@@ -109,28 +72,31 @@ Una volta acquisiti i dati sperimentali, abbiamo graficato l'andamento della pre
 
 Questo andamento è analogo a tutti gli altri set di dati, cioè del tipo: $Y=a+bX$, dove Y è la pressione e X il tempo. Tramite regressione lineare abbiamo quindi calcolato i parametri a e b, e verificato la bontà del fit tramite test del chi quadro. Riportiamo nella seguente tabella i risultati ottenuti:\\
 \vspace{10 px}\\
+
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline $Tacche$ & $a\pm$$\delta a$ [Pa] & $b\pm$$\delta b$ [$s^{-1}$] & $\chi^{2}\ped{sperimentale}$ & $\chi^{2}\ped{teorico}$ & $Q\pm\delta Q$ [$pa\cdot m^{3}$$\cdot s{-1}$] \\ 
-\hline 1 & 1.84$\cdot10^{-2}$$\pm 5\cdot10^{-4}$ &  3.67$\cdot10^{-4}$$\pm 6\cdot10^{-7}$ & 2896 & 2801 &  \\ 
-\hline 2 & 3$\cdot10^{-4}$$\pm 1\cdot10^{-4}$ & 2.904$\cdot10^{-3}$$\pm 8\cdot10^{-6}$ & 238 & 683 &  \\ 
-\hline 3 & -2.4$\cdot10^{-2}$$\pm 1\cdot10^{-3}$ &  2.80$\cdot10^{-3}$$\pm 1\cdot10^{-5}$ & 192 & 456 &  \\ 
-\hline 4 & -2.8$\cdot10^{-2}$$\pm 2\cdot10^{-3}$ &  5.41$\cdot10^{-3}$$\pm 3\cdot10^{-5}$ & 81 & 214 &  \\ 
-\hline 5 & -1.91$\cdot10^{-1}$$\pm 4\cdot10^{-3}$ & 3.51$\cdot10^{-2}$$\pm 1\cdot10^{-4}$ & 95 & 202 &  \\ 
-\hline 6 & -1.98$\pm 3\cdot10^{-2}$  & 5.36$\cdot10^{-1}$$\pm 2\cdot10^{-3}$ & 104 & 177 &  \\ 
-\hline 7 & -33.1$\pm 1.2\cdot10^{-1}$ & 8.32$\pm 3\cdot10^{-2}$ & 103 & 194 &  \\ 
-\hline 8 & -1.107$\cdot10^{3}$$\pm 3$ & 50.5$\pm 1\cdot10^{-1}$  & 915 & 325 &  \\ 
+\hline 1 & 1.84$\cdot10^{-2}$$\pm 0.05\cdot10^{-2}$ &  36.7$\cdot10^{-5}$$\pm 0.06\cdot10^{-5}$ & 2896 & 2801 &  \\ 
+\hline 2 & 3$\cdot10^{-4}$$\pm 1\cdot10^{-4}$ & 29.04$\cdot10^{-4}$$\pm 0.08\cdot10^{-4}$ & 238 & 683 &  \\ 
+\hline 3 & -2.4$\cdot10^{-2}$$\pm 0.1\cdot10^{-2}$ &  2.80$\cdot10^{-3}$$\pm 0.01\cdot10^{-3}$ & 192 & 456 &  \\ 
+\hline 4 & -2.8$\cdot10^{-2}$$\pm 0.2\cdot10^{-2}$ &  5.41$\cdot10^{-3}$$\pm 0.03\cdot10^{-3}$ & 81 & 214 &  \\ 
+\hline 5 & -1.91$\cdot10^{-1}$$\pm 0.04\cdot10^{-1}$ & 3.51$\cdot10^{-2}$$\pm 0.01\cdot10^{-2}$ & 95 & 202 &  \\ 
+\hline 6 & -1.98$\pm 0.03$  & 5.36$\cdot10^{-1}$$\pm 0.02\cdot10^{-1}$ & 104 & 177 &  \\ 
+\hline 7 & -33.1$\pm 0.12$ & 8.32$\pm 0.03$ & 103 & 194 &  \\ 
+\hline 8 & -1107$\pm 3$ & 50.5$\pm 0.1$  & 915 & 325 &  \\ 
 \hline 
 \end{tabular} \\
 \\
 \\
+
 Nella tabella compare anche il parametro Q. Q è il flusso di aria entrante nella camera di volume ed è misurato come:
 $Q=V\cdot \frac{dP}{dt}-Q0$, dove V è 5930$\pm 30$ $cm^{3}$, e $\frac{dP}{dt}$ è il parametro b precedentemente stimato,e Q0 il flusso dovuto alle perdite dell'impianto da vuoto.  Notiamo che il primo valore di flusso ha valore negativo. Questo si può spiegare col fatto che il flusso dovuto all'apertura di una tacca della valvola a spillo ha valore infinitesimo, e che il flusso dovuto alle perdite dell'impianto non è costante nel tempo. E' quindi plausibile che il flusso di fondo sia aumentato assumendo un valore maggiore di Q0.
 
 Inseriamo di seguito il grafico relativo al flusso Q in funzione del numero di giri della valvola a spillo:\\ 
  \begin{center} 
-\begin{figure}[H]
-\hspace{-90.5pt}
+\begin{figure}[htpd]
+\hspace{-50 pt}
 \includegraphics{graficoQ.png}
+
 
 
 \end{figure}
