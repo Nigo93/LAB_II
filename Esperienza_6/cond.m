@@ -67,7 +67,7 @@ pi5_pas=pi5.*100;
 pi5_rpas=pi5_r.*100;
 
 % valori di flusso
-q=[0.0000297;0.0000206;0.00318;0.0493;0.3];
+q=[0.0000297;0.000206;0.00318;0.0493;0.3];
 dq=[0.0000002;0.0000009;0.0000318;0.000493;0.003];
 
 % calcolo della conduttanza 
@@ -112,9 +112,25 @@ Dp_it=mpi5-mpt5;
 C_ci=q./Dp_ci;%conduttanza coda-intermedia
 C_it=q./Dp_it;%conduttanza intermdia-finale
 
+
 z=(1./C_ci)+(1./C_it);%calcolo della conduttanza di due tubi in serie
 
-%pressione media per ragime lineare
+%media per regime laminare
+pci=(mpc5+mpi5)./2;
+pit=(mpi5+mpt5)./2;
+
+%regime laminare dei tubi separati
+ci_lam=1350.*((pci.*(0.008^4))./1.45);
+ct_lam=1350.*((pit.*(0.008^4))./1.45);
+
+%calcolo per somma dei tubi
+m5_me=(mpt5+mpc5)./2;
+c5_lam=1350.*((m5_me.*(0.008^4))./2.9);
+
+%REGIME DI FLUSSO
+Re5=(4./(3.1415.*0.0000181*0.008)).*(0.02946./(8.31.*293)).*q;
+
+%REGIME DI FLUSSO LAMINARE
 p1_me=(mpt1+mpc1)./2;
 p2_me=(mpt2+mpc2)./2;
 p3_me=(mpt3+mpc3)./2;
@@ -133,7 +149,10 @@ c4_mo=120.*((0.0025^3)./8);
 
 %calcolo del numero di raynolds per differenti tubi con differenti diametri
 %e regimi di flusso differenti
-Re1=(4./(3.1415.*0.0000181*0.004)).*q;
+Re1=(4./(3.1415.*0.0000181*0.004)).*(0.02946./(8.31.*293)).*q;
+Re2=(4./(3.1415.*0.0000181*0.004)).*(0.02946./(8.31.*293)).*q;
+Re3=(4./(3.1415.*0.0000181*0.0025)).*(0.02946./(8.31.*293)).*q;
+Re4=(4./(3.1415.*0.0000181*0.0025)).*(0.02946./(8.31.*293)).*q;
 
 %calcolo errori sulla pressione
 mpt1_er=mpt1.*0.05;
@@ -158,3 +177,4 @@ d_c1=sqrt((dq./d_p1).^2 + ((q./d_p1.^2) .* d_p1).^2);
 d_c2=sqrt((dq./d_p2).^2 + ((q./d_p2.^2) .* d_p2).^2);
 d_c3=sqrt((dq./d_p3).^2 + ((q./d_p3.^2) .* d_p3).^2);
 d_c4=sqrt((dq./d_p4).^2 + ((q./d_p4.^2) .* d_p4).^2);
+
