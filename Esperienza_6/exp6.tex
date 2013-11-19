@@ -16,10 +16,10 @@
 \large Alberini Giacomo \\ Bassini Luigi \\ Michele Pedrotti\\ Trevisson Nicola 
 \end{center}
 \section{Scopo dell'esperienza}
-Lo scopo di questa esperienza è quello di misurare la conduttanza di vari tubi con diametri e lunghezze diversi in regimi di flusso differenti.
+Lo scopo di questa esperienza è quello di misurare la conduttanza di vari tubi con diametri e lunghezze diversi in regimi di flusso differenti. Successivamente le conduttanze ottenute sperimentalmente verranno confrontate con i valori attesi calcolati tenendo conto del tipo di regime di flusso. 
 \section{Misura della Conduttanza}
 
-Per calcolare la conduttanza si è reso necessario l'uso di una pompa da vuoto, due pirani (con relativa strumentazione di misura ), una vlavola a spillo (già tarata in precedenza) e vari tubi con lunghezze e diametri differenti.
+Per calcolare la conduttanza si è reso necessario l'uso di una pompa da vuoto, due pirani (con relativa strumentazione di misura ), una valvola a spillo (già tarata in precedenza) e vari tubi con lunghezze e diametri differenti.
 
 	
 \begin{center} 
@@ -30,13 +30,25 @@ Per calcolare la conduttanza si è reso necessario l'uso di una pompa da vuoto, 
 \end{center}
 
 Nello schema soprastante, per semplicità, i vari tubi sono indicati dalla linea retta verticale tra i due T che collegano i pirani.
-Per ottenre il valore di conduttanza a differenti regimi di flusso, opportunamente creati tramite la manipolazione della valvola a spillo, si sono utilizzati i due pirani. Essi ci hanno permesso di rilevare i valori di pressione in testa e in coda al tubo sotto analisi. L'andamento della pressione è stato monitorato tramite un software che ha reso osservabile il momento in cui la pressione si stabilizzava dopo i cambiamenti di flusso passanti per la spillo. Una volta stabilizzata la pressione si è proceduto all'annotazione del valore di pressione corrispondente al numero di tacche di apertura della valvola a spillo (dal vuoto nel tubo per poi crescereda 4 a 8 giri e ritorno).
+Per ottenre il valore di conduttanza a differenti regimi di flusso, opportunamente creati tramite la manipolazione della valvola a spillo, si sono utilizzati i due pirani. Essi ci hanno permesso di rilevare i valori di pressione in testa e in coda al tubo sotto analisi. L'andamento della pressione è stato monitorato tramite un software che riportava in tempo reale i valori di pressione in un grafico. Questo grafico, aggiornato in tempo reale, ha reso possibile l'osservazione del momento in cui la pressione si stabilizzava dopo un cambiamento come ad esempio l'apertura e la chiusura della valvola. Una volta stabilizzata la pressione si è proceduto all'annotazione del valore di pressione corrispondente al numero di tacche di apertura della valvola a spillo (dal vuoto nel tubo per poi crescere da 4 a 8 giri e ritorno).
 Una volta ottenuti tutti i dati relativi ad ogni tubo a nostra disposizione si passa al calcolo della conduttanza. Per fare questo è necessario utilizzare i dati di flusso delle precedenti esperienze relativi alla valvola a spillo. Noto il flusso Q della valvola a spillo e nota la differenza di pressione fra testa e coda $\delta p$ si può ricavare la conduttanza C tramite l'ugualianza $ C = \frac{Q}{\Delta P} $.\\
+I valori ricavati sperimentalmente sono poi confrontati con quelli di conduttanza teorica attesi.
+Per poter calcolare i valori di conduttanza teorica è necessario conoscere il tipo di regime del flusso.\\
+
+Questi regimi di flusso sono legati al regime di vuoto, per cui i primi tre (viscoso laminare, viscoso intermedio, viscoso turbolento) appartengono ad un regime di basso vuoto, il regime transitorio appartiene al regime di medio vuoto e il regime molecolare è relativo ai sistemi di alto vuoto e ultra alto vuoto.\\
+Nel nostro caso si passa da un regime di basso vuoto ad un regime di medio vuoto. Ogni regime presenta una formula differente per il calcolo della conduttanza teorica.
+Per un corretto calcolo del valore teorico di conduttanza si utilizza la seguente formula:
+$$ Re=\frac{4}{\pi \eta d}\frac{M}{RT}Q$$
+Il risultato ottenuto ci permetterà di scegliere tra queste due formule la più adatta al calcolo della conduttanza teorica.
+$$C_{lam}=1350\frac{\bar{P}d^4}{l}[m^3/s]$$
+$$C_{lam}=120\frac{d^3}{l}[m^3/s]$$
+ 
+Nelle seguenti tabelle si riportano i risultati ottenuti.\\
  
 
 \begin{center} 
 \begin{tabular}{|c|c|c|c|}
-\hline Apertura valvola a spillo & Conduttanza & Regime di flusso & Conduttanza teorica \\ 
+\hline Apertura valvola & $C_{lab} [m^3/s]$ & Regime di flusso & $C_{teo} [m^3/s]$ \\ 
 \hline 4 & 0.0015 $\cdot10^{-4}\pm 0.0006\cdot10^{-4}$ & transitorio & 0.0046$\cdot10^{-3}\pm 0.0003\cdot10^{-3}$ \\ 
 \hline 5 & 0.010$\cdot10^{-4}\pm 0.007\cdot10^{-4}$ & transitorio & 0.0055$\cdot10^{-3}\pm 0.0006\cdot10^{-3}$ \\ 
 \hline 6 & 0.06$\cdot10^{-4}\pm 0.01\cdot10^{-4}$ & transitorio & 0.011$\cdot10^{-3}\pm 0.001\cdot10^{-3}$ \\
@@ -49,7 +61,7 @@ Tubo di lunghezza $8m$ e diametro $4mm$ .
 \\
 \vspace{15pt}
 \begin{tabular}{|c|c|c|c|}
-\hline Apertura valvola a spillo & Conduttanza & Regime di flusso & Conduttanza teorica \\ 
+\hline Apertura valvola & $C_{lab} [m^3/s]$ & Regime di flusso & $C_{teo} [m^3/s]$ \\ 
 \hline 4 & 0.0011$\cdot10^{-3}\pm 0.0001\cdot10^{-3}$ & transitorio & 0.0070$\cdot10^{-3}\pm 0.0008\cdot10^{-3}$ \\ 
 \hline 5 & 0.0059$\cdot10^{-3}\pm 0.0006\cdot10^{-3}$ & transitorio & 0.0086$\cdot10^{-3}\pm 0.0007\cdot10^{-3}$ \\ 
 \hline 6 & 0.023$\cdot10^{-3}\pm 0.0002\cdot10^{-3}$ & transitorio & 0.032$\cdot10^{-3}\pm 0.0004\cdot10^{-3}$ \\
@@ -62,7 +74,7 @@ Tubo di lunghezza $80cm$ e diametro $4mm$.
 \\
 \vspace{15pt}
 \begin{tabular}{|c|c|c|c|}
-\hline Apertura valvola a spillo & Conduttanza & Regime di flusso & Conduttanza teorica \\ 
+\hline Apertura valvola & $C_{lab} [m^3/s]$ & Regime di flusso & $C_{teo} [m^3/s]$ \\ 
 \hline 4 & 0.0070$\cdot10^{-4}\pm 0.0006\cdot10^{-4}$ & transitorio & 0.0014$\cdot10^{-3}\pm 0.0001\cdot10^{-3}$ \\ 
 \hline 5 & 0.027$\cdot10^{-4}\pm 0.003\cdot10^{-4}$ & transitorio & 0.0026$\cdot10^{-3}\pm 0.0002\cdot10^{-3}$ \\ 
 \hline 6 & 0.095$\cdot10^{-4}\pm 0.009\cdot10^{-4}$ & laminare 1.1$\pm0.1$ & 0.011$\cdot10^{-3}\pm 0.001\cdot10^{-3}$\\
@@ -75,7 +87,7 @@ Tubo di lunghezza $80cm$ e diametro $2.5mm$.
 \\
 \vspace{15pt}
 \begin{tabular}{|c|c|c|c|}
-\hline Apertura valvola a spillo & Conduttanza & Regime di flusso & Conduttanza teorica \\ 
+\hline Apertura valvola & $C_{lab} [m^3/s]$ & Regime di flusso & $C_{teo} [m^3/s]$ \\ 
 \hline 4 & 0.0007$\cdot10^{-4}\pm 0.0001\cdot10^{-4}$ & transitorio & 0.012$\cdot10^{-4}\pm 0.001\cdot10^{-4}$ \\ 
 \hline 5 & 0.0046$\cdot10^{-4}\pm 0.0004\cdot10^{-4}$ & transitorio & 0.014$\cdot10^{-4}\pm 0.001\cdot10^{-4}$ \\ 
 \hline 6 & 0.024$\cdot10^{-4}\pm 0.002\cdot10^{-4}$ & laminare 1.1$\pm0.1$ & 0.042$\cdot10^{-4}\pm 0.004\cdot10^{-4}$ \\
@@ -88,7 +100,7 @@ Tubo di lunghezza $8m$ e diametro $2.5mm$.
 \\
 \vspace{15pt}
 \begin{tabular}{|c|c|c|c|}
-\hline Apertura valvola a spillo & Conduttanza & Regime di flusso & Conduttanza teorica \\ 
+\hline Apertura valvola & $C_{lab} [m^3/s]$ & Regime di flusso & $C_{teo} [m^3/s]$ \\ 
 \hline 4 & 1.2$\cdot10^{6}\pm 0.1\cdot10^{6} $ & transitorio & 0.035 $\cdot10^{-3}\pm 0.003\cdot10^{-3}$ \\ 
 \hline 5 & 0.20$\cdot10^{6}\pm 0.02\cdot10^{6}$ & transitorio & 0.042 $\cdot10^{-3}\pm 0.004\cdot10^{-3}$\\ 
 \hline 6 & 0.026$\cdot10^{6}\pm 0.002\cdot10^{6}$ & transitorio & 0.091$\cdot10^{-3}\pm 0.009\cdot10^{-3}$ \\
@@ -100,11 +112,14 @@ Tubo di lunghezza $8m$ e diametro $2.5mm$.
 Composizione di due tubi di acciaio in serie con tre vacuometri in tre punti dell'impianto, uno in testa, uno in coda e uno in posizione intermedia fra i due tubi.
 \vspace{10pt}
 \end{center}
+In quest'ultima tabella, relativa ai tubi in metallo collegati in serie, è stata inserita l'impedenza al posto della conduttanza poichè questa è stata calcolata per i singoli tubi e quindi si è resonecessario l'utilizzo delle seguenti formule: $$Z=\sum_{i=1}^{n}Z_i $$ \begin{center}equivalente a\end{center}  $$ 1/C=\sum_{i=1}^{n}1/C_i $$
+Queste ci hanno permesso di calcolare l'impedenza di due tubi distinti uniti tramite un raccordo T. Su uno dei capi del raccordo era collegato un vacuometro pirani necessario alla misura della pressione intermedia dell'apparato. Questo valore di pressione, noto il flusso della nostra valvola a spillo, ci ha permesso di calcolare, riducendo l'errore, la conduttanza di un tubo senza considerare l'altro.
+
 Nei conti si è tenuto in considerazione per la viscosità dinamica e per la fomula $ M/RT $ la temperatura ambientale di 20$^\circ C$.
 
 Si può notare inoltre che i valori di conduttanza teorica sono molto maggiori dei valori calcolati. Questo è dovuto al fatto che il tubo utilizzato non è un tubo ideale ma al suo interno presenta delle imperfezioni.Inoltre i valori sono legati anche alla posizione del pirani rispetto al flusso di aria entrante nell'impianto poichè la velocità di flusso passante varia nel raccordo a t per via della presenza di un angolo retto.
 
-Nella tabella relativa ai tubi in metallo collegati in serie abbiamo inserito l'impedenza al posto della conduttanza poichè questa è stata calcolata per i singoli tubi e quindi era necessario utilizzare la seguente formula $z=\frac{1}{c_1}+\frac{1}{c_2} $ per sommarne il risultato.
+
 
 
 
