@@ -19,7 +19,7 @@
 Lo scopo di questa esperienza è quello di misurare la conduttanza di vari tubi con diametri e lunghezze diversi in regimi di flusso differenti. Successivamente le conduttanze ottenute sperimentalmente verranno confrontate con i valori attesi calcolati tenendo conto del tipo di regime di flusso. 
 \section{Misura della Conduttanza}
 
-Per calcolare la conduttanza si è reso necessario l'uso di una pompa da vuoto, due pirani (con relativa strumentazione di misura ), una valvola a spillo (già tarata in precedenza) e vari tubi con lunghezze e diametri differenti.
+Per calcolare la conduttanza si è reso necessario l'uso di una pompa da vuoto, due pirani (con relativa strumentazione di misura), una valvola a spillo (già tarata in precedenza) e vari tubi con lunghezze e diametri differenti.
 
 	
 \begin{center} 
@@ -30,18 +30,30 @@ Per calcolare la conduttanza si è reso necessario l'uso di una pompa da vuoto, 
 \end{center}
 
 Nello schema soprastante, per semplicità, i vari tubi sono indicati dalla linea retta verticale tra i due T che collegano i pirani.
-Per ottenre il valore di conduttanza a differenti regimi di flusso, opportunamente creati tramite la manipolazione della valvola a spillo, si sono utilizzati i due pirani. Essi ci hanno permesso di rilevare i valori di pressione in testa e in coda al tubo sotto analisi. L'andamento della pressione è stato monitorato tramite un software che riportava in tempo reale i valori di pressione in un grafico. Questo grafico, aggiornato in tempo reale, ha reso possibile l'osservazione del momento in cui la pressione si stabilizzava dopo un cambiamento come ad esempio l'apertura e la chiusura della valvola. Una volta stabilizzata la pressione si è proceduto all'annotazione del valore di pressione corrispondente al numero di tacche di apertura della valvola a spillo (dal vuoto nel tubo per poi crescere da 4 a 8 giri e ritorno).
+Per ottenre il valore di conduttanza a differenti regimi di flusso, opportunamente creati tramite la manipolazione della valvola a spillo, si sono utilizzati i due pirani. Essi hanno permesso di rilevare i valori di pressione in testa e in coda al tubo sotto analisi. L'andamento della pressione è stato monitorato tramite un software che riportava in tempo reale i valori di pressione in un grafico. Questo grafico, aggiornato in tempo reale, ha reso possibile l'osservazione del momento in cui la pressione si stabilizzava dopo un cambiamento come ad esempio l'apertura e la chiusura della valvola. Una volta stabilizzata la pressione si è proceduto all'annotazione del valore di pressione corrispondente al numero di tacche di apertura della valvola a spillo (dal vuoto nel tubo per poi salire da 4 a 8 giri e ritorno).
 Una volta ottenuti tutti i dati relativi ad ogni tubo a nostra disposizione si passa al calcolo della conduttanza. Per fare questo è necessario utilizzare i dati di flusso delle precedenti esperienze relativi alla valvola a spillo. Noto il flusso Q della valvola a spillo e nota la differenza di pressione fra testa e coda $\delta p$ si può ricavare la conduttanza C tramite l'ugualianza $ C = \frac{Q}{\Delta P} $.\\
 I valori ricavati sperimentalmente sono poi confrontati con quelli di conduttanza teorica attesi.
 Per poter calcolare i valori di conduttanza teorica è necessario conoscere il tipo di regime del flusso.\\
-
-Questi regimi di flusso sono legati al regime di vuoto, per cui i primi tre (viscoso laminare, viscoso intermedio, viscoso turbolento) appartengono ad un regime di basso vuoto, il regime transitorio appartiene al regime di medio vuoto e il regime molecolare è relativo ai sistemi di alto vuoto e ultra alto vuoto.\\
+Questi regimi di flusso sono legati al regime di vuoto per cui i primi tre (viscoso laminare, viscoso intermedio, viscoso turbolento) appartengono ad un regime di basso vuoto, il regime transitorio appartiene al regime di medio vuoto e il regime molecolare è relativo ai sistemi di alto vuoto e ultra alto vuoto.\\
 Nel nostro caso si passa da un regime di basso vuoto ad un regime di medio vuoto. Ogni regime presenta una formula differente per il calcolo della conduttanza teorica.
 Per un corretto calcolo del valore teorico di conduttanza si utilizza la seguente formula:
 $$ Re=\frac{4}{\pi \eta d}\frac{M}{RT}Q$$
-Il risultato ottenuto ci permetterà di scegliere tra queste due formule la più adatta al calcolo della conduttanza teorica.
+Dove $ \eta $ è la viscosità dinamica del fluido(alla temperatura di 20$^\circ C$), $ d $ è il diametro della canalizzazione e $ Q $ è il flusso precedentemente trovato (riportato nella seguente tabella).
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline $Tacche$ & $Q\pm\delta Q$ [$Pa\cdot m^{3}$$\cdot s^{-1}$] \\ 
+
+\hline 4 & 2.97$\cdot10^{-5}$$\pm 2\cdot10^{-7}$ \\ 
+\hline 5 & 2.06$\cdot10^{-4}$$\pm 9\cdot10^{-7}$ \\ 
+\hline 6 & 3.18$\cdot10^{-3}$$\pm 1\cdot10^{-5}$ \\ 
+\hline 7 & 4.93$\cdot10^{-2}$$\pm 2\cdot10^{-4}$ \\ 
+\hline 8 & 3.00$\cdot10^{-1}$$\pm 1\cdot10^{-3}$ \\ 
+\hline 
+\end{tabular}
+\end{center}
+In base al regime teorico all'interno del tubo si andrà ad utilizzare una delle due seguenti formule. La prima è adatta al calcolo della conduttanza teorica nel regime laminare mentre la seconda è adatta al calcolo della conduttanza nel regime molecolare.
 $$C_{lam}=1350\frac{\bar{P}d^4}{l}[m^3/s]$$
-$$C_{lam}=120\frac{d^3}{l}[m^3/s]$$
+$$C_{molec}=120\frac{d^3}{l}[m^3/s]$$
  
 Nelle seguenti tabelle si riportano i risultati ottenuti.\\
  
